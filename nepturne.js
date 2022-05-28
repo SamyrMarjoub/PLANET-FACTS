@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 $('#internal').click(function () {
-    Planet.setAttribute('src', '/images/planet-neptune-internal.svg')
+    Planet.setAttribute('src', './images/planet-neptune-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.`
     Planet.style.transform = 'scale(0.9)'
@@ -26,7 +26,7 @@ $('#internal').click(function () {
 
 })
 $('#overview').click(function () {
-    Planet.setAttribute('src', '/images/planet-neptune.svg')
+    Planet.setAttribute('src', './images/planet-neptune.svg')
     geology.style.display = 'none'
     text.innerHTML = `Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.    `
     Planet.style.transform = 'scale(0.9)'
@@ -40,7 +40,7 @@ $('#overview').click(function () {
 })
 $('#surface').click(function () {
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-neptune.svg')
+    Planet.setAttribute('src', './images/planet-neptune.svg')
     text.innerHTML = `Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.`
     $('#surface').css('background-color', '#2d68f0')
     $('#internal').css('background-color', 'transparent')
@@ -50,7 +50,7 @@ $('#btn-m-f').click(function () {
     $('.btn-mobile-1').css('border-bottom', '2px solid #2d68f0')
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-neptune.svg')
+    Planet.setAttribute('src', './images/planet-neptune.svg')
     geology.style.display = 'none'
     text.innerHTML = `Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.    `
     Planet.style.transform = 'scale(0.9)'
@@ -62,7 +62,7 @@ $('#btn-m-s').click(function () {
     $('.btn-mobile-2').css('border-bottom', '2px solid #2d68f0')
     $('.btn-mobile-1').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-neptune-internal.svg')
+    Planet.setAttribute('src', './images/planet-neptune-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.`
     Planet.style.transform = 'scale(0.9)'
@@ -75,14 +75,14 @@ $('#btn-m-l').click(function () {
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-1').css('border-bottom', 'none')
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-neptune.svg')
+    Planet.setAttribute('src', './images/planet-neptune.svg')
     text.innerHTML = `Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.`
     $('#surface').css('background-color', '#2d68f0')
 
 })
 $('.menu-mobile').click(function () {
     ++cont
-    menu_img.setAttribute('src', '/images/icon-close-menu.svg')
+    menu_img.setAttribute('src', './images/icon-close-menu.svg')
     if (cont % 2 == 0) {
         if (width <= 320) {
             $('body').css('overflow', 'visible')
@@ -94,7 +94,7 @@ $('.menu-mobile').click(function () {
         $('.menu-mobile-div').show('fast')
     } else {
         $('.menu-mobile-div').hide('fast')
-        menu_img.setAttribute('src', '/images/icon-menu.svg')
+        menu_img.setAttribute('src', './images/icon-menu.svg')
         $('body').css('overflow', 'visible')
         $('html').css('overflow', 'visible')
     }
