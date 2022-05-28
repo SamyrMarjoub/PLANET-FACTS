@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 $('#internal').click(function () {
-    Planet.setAttribute('src', '/images/planet-mars-internal.svg')
+    Planet.setAttribute('src', './images/planet-mars-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.`
     Planet.style.transform = 'scale(0.9)'
@@ -26,7 +26,7 @@ $('#internal').click(function () {
 
 })
 $('#overview').click(function () {
-    Planet.setAttribute('src', '/images/planet-mars.svg')
+    Planet.setAttribute('src', './images/planet-mars.svg')
     geology.style.display = 'none'
     text.innerHTML = `Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".`
     Planet.style.transform = 'scale(0.9)'
@@ -40,7 +40,7 @@ $('#overview').click(function () {
 })
 $('#surface').click(function () {
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-mars.svg')
+    Planet.setAttribute('src', './images/planet-mars.svg')
     text.innerHTML = `Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.`
     $('#surface').css('background-color', '#d14c32')
     $('#internal').css('background-color', 'transparent')
@@ -50,7 +50,7 @@ $('#btn-m-f').click(function () {
     $('.btn-mobile-1').css('border-bottom', '2px solid #d14c32')
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-mars.svg')
+    Planet.setAttribute('src', './images/planet-mars.svg')
     geology.style.display = 'none'
     text.innerHTML = `Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".`
     Planet.style.transform = 'scale(0.9)'
@@ -62,7 +62,7 @@ $('#btn-m-s').click(function () {
     $('.btn-mobile-2').css('border-bottom', '2px solid #d14c32')
     $('.btn-mobile-1').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-mars-internal.svg')
+    Planet.setAttribute('src', './images/planet-mars-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.`
     Planet.style.transform = 'scale(0.9)'
@@ -75,14 +75,14 @@ $('#btn-m-l').click(function () {
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-1').css('border-bottom', 'none')
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-mars.svg')
+    Planet.setAttribute('src', './images/planet-mars.svg')
     text.innerHTML = `Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.`
     $('#surface').css('background-color', '#d14c32')
 
 })
 $('.menu-mobile').click(function () {
     ++cont
-    menu_img.setAttribute('src', '/images/icon-close-menu.svg')
+    menu_img.setAttribute('src', './images/icon-close-menu.svg')
     if (cont % 2 == 0) {
         if (width <= 320) {
             $('body').css('overflow', 'visible')
@@ -94,7 +94,7 @@ $('.menu-mobile').click(function () {
         $('.menu-mobile-div').show('fast')
     } else {
         $('.menu-mobile-div').hide('fast')
-        menu_img.setAttribute('src', '/images/icon-menu.svg')
+        menu_img.setAttribute('src', './images/icon-menu.svg')
         $('body').css('overflow', 'visible')
         $('html').css('overflow', 'visible')
     }
