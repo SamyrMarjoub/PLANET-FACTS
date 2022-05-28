@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 $('#internal').click(function () {
-    Planet.setAttribute('src', '/images/planet-saturn-internal.svg')
+    Planet.setAttribute('src', './images/planet-saturn-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.    `
     Planet.style.transform = 'scale(0.9)'
@@ -26,7 +26,7 @@ $('#internal').click(function () {
 
 })
 $('#overview').click(function () {
-    Planet.setAttribute('src', '/images/planet-saturn.svg')
+    Planet.setAttribute('src', './images/planet-saturn.svg')
     geology.style.display = 'none'
     text.innerHTML = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
     Planet.style.transform = 'scale(0.9)'
@@ -40,7 +40,7 @@ $('#overview').click(function () {
 })
 $('#surface').click(function () {
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-saturn.svg')
+    Planet.setAttribute('src', './images/planet-saturn.svg')
     text.innerHTML = `The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust.`
     $('#surface').css('background-color', '#cd5120')
     $('#internal').css('background-color', 'transparent')
@@ -50,7 +50,7 @@ $('#btn-m-f').click(function () {
     $('.btn-mobile-1').css('border-bottom', '2px solid #cd5120')
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-saturn.svg')
+    Planet.setAttribute('src', './images/planet-saturn.svg')
     geology.style.display = 'none'
     text.innerHTML = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
     Planet.style.transform = 'scale(0.9)'
@@ -62,7 +62,7 @@ $('#btn-m-s').click(function () {
     $('.btn-mobile-2').css('border-bottom', '2px solid #cd5120')
     $('.btn-mobile-1').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-saturn-internal.svg')
+    Planet.setAttribute('src', './images/planet-saturn-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.    `
     Planet.style.transform = 'scale(0.9)'
@@ -75,14 +75,14 @@ $('#btn-m-l').click(function () {
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-1').css('border-bottom', 'none')
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-saturn.svg')
+    Planet.setAttribute('src', './images/planet-saturn.svg')
     text.innerHTML = `The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust.`
     $('#surface').css('background-color', '#cd5120')
 
 })
 $('.menu-mobile').click(function () {
     ++cont
-    menu_img.setAttribute('src', '/images/icon-close-menu.svg')
+    menu_img.setAttribute('src', './images/icon-close-menu.svg')
     if (cont % 2 == 0) {
         if (width <= 320) {
             $('body').css('overflow', 'visible')
@@ -94,7 +94,7 @@ $('.menu-mobile').click(function () {
         $('.menu-mobile-div').show('fast')
     } else {
         $('.menu-mobile-div').hide('fast')
-        menu_img.setAttribute('src', '/images/icon-menu.svg')
+        menu_img.setAttribute('src', './images/icon-menu.svg')
         $('body').css('overflow', 'visible')
         $('html').css('overflow', 'visible')
     }
