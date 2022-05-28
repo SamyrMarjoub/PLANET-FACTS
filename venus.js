@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 $('#internal').click(function () {
-    Planet.setAttribute('src', '/images/planet-venus-internal.svg')
+    Planet.setAttribute('src', './images/planet-venus-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.`
     Planet.style.transform = 'scale(0.9)'
@@ -26,7 +26,7 @@ $('#internal').click(function () {
 
 })
 $('#overview').click(function () {
-    Planet.setAttribute('src', '/images/planet-venus.svg')
+    Planet.setAttribute('src', './images/planet-venus.svg')
     geology.style.display = 'none'
     text.innerHTML = `Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.`
     Planet.style.transform = 'scale(0.9)'
@@ -40,7 +40,7 @@ $('#overview').click(function () {
 })
 $('#surface').click(function () {
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-venus.svg')
+    Planet.setAttribute('src', './images/planet-venus.svg')
     text.innerHTML = `Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.`
     $('#surface').css('background-color', '#eda249')
     $('#internal').css('background-color', 'transparent')
@@ -50,7 +50,7 @@ $('#btn-m-f').click(function () {
     $('.btn-mobile-1').css('border-bottom', '2px solid #eda249')
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-venus.svg')
+    Planet.setAttribute('src', './images/planet-venus.svg')
     geology.style.display = 'none'
     text.innerHTML = `Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.`
     Planet.style.transform = 'scale(0.9)'
@@ -62,7 +62,7 @@ $('#btn-m-s').click(function () {
     $('.btn-mobile-2').css('border-bottom', '2px solid #eda249')
     $('.btn-mobile-1').css('border-bottom', 'none')
     $('.btn-mobile-3').css('border-bottom', 'none')
-    Planet.setAttribute('src', '/images/planet-venus-internal.svg')
+    Planet.setAttribute('src', './images/planet-venus-internal.svg')
     geology.style.display = 'none'
     text.innerHTML = `The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.`
     Planet.style.transform = 'scale(0.9)'
@@ -75,14 +75,14 @@ $('#btn-m-l').click(function () {
     $('.btn-mobile-2').css('border-bottom', 'none')
     $('.btn-mobile-1').css('border-bottom', 'none')
     geology.style.display = 'block'
-    Planet.setAttribute('src', '/images/planet-venus.svg')
+    Planet.setAttribute('src', './images/planet-venus.svg')
     text.innerHTML = `Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.`
     $('#surface').css('background-color', '#eda249')
 
 })
 $('.menu-mobile').click(function () {
     ++cont
-    menu_img.setAttribute('src', '/images/icon-close-menu.svg')
+    menu_img.setAttribute('src', './images/icon-close-menu.svg')
     if (cont % 2 == 0) {
         if (width <= 320) {
             $('body').css('overflow', 'visible')
@@ -94,7 +94,7 @@ $('.menu-mobile').click(function () {
         $('.menu-mobile-div').show('fast')
     } else {
         $('.menu-mobile-div').hide('fast')
-        menu_img.setAttribute('src', '/images/icon-menu.svg')
+        menu_img.setAttribute('src', './images/icon-menu.svg')
         $('body').css('overflow', 'visible')
         $('html').css('overflow', 'visible')
     }
