@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url('/images/background-stars.svg');
+    background-image: url('./images/background-stars.svg');
     background-repeat: repeat-x;
     background-color: #070724;
     background-position: center;
@@ -251,7 +251,7 @@ main {
 
 #wiki::after {
     content: '';
-    background-image: url('/images/icon-source.svg');
+    background-image: url('./images/icon-source.svg');
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
