@@ -41,6 +41,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-play-state: running;
+    
 } 
 
 @keyframes float {
