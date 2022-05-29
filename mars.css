@@ -44,7 +44,7 @@ body {
         transform: translatey(0px);
     }
 }
-/* .animation-test {
+ .animation-test {
     background-image: url('./images/background-stars.svg');
     animation: linear infinite;
     background-repeat: repeat;
@@ -56,7 +56,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-play-state: running;
-} */
+} 
 
 header {
     background-color: #070724;
