@@ -115,10 +115,40 @@ header {
     text-decoration: none;
 }
 
-.list a:hover {
-    border-bottom: solid 1px gold;
-    padding-bottom: 10px;
-
+.list a:hover{
+    color: white;
+}
+#earth-h:hover {
+    border-bottom: solid 3px #6d2ed5;
+    padding-bottom: 28px;
+}
+#mercury-h:hover{
+    border-bottom: solid 3px #419ebb;
+    padding-bottom: 28px;
+}
+#venus-h:hover{
+    border-bottom: solid 3px #eda249;
+    padding-bottom: 28px;
+}
+#mars-h:hover{
+    border-bottom: solid 3px #d14c32;
+    padding-bottom: 28px;
+}
+#jupiter-h:hover{
+    border-bottom: solid 3px #d83a34;
+    padding-bottom: 28px;
+}
+#saturn-h:hover{
+    border-bottom: solid 3px #cd5120;
+    padding-bottom: 28px;
+}
+#uranus-h:hover{
+    border-bottom: solid 3px #1ec1a2;
+    padding-bottom: 28px;
+}
+#neptune-h:hover{
+    border-bottom: solid 3px #2d68f0;
+    padding-bottom: 28px;
 }
 
 main {
