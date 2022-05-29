@@ -30,7 +30,7 @@ body {
 }
 
 .animation-test {
-    background-image: url('/images/background-stars.svg');
+    background-image: url('./images/background-stars.svg');
     animation: linear infinite;
     background-repeat: repeat;
     animation-name: animation;
